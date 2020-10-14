@@ -1,0 +1,87 @@
+
+@charset 'utf-8';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,ul,menu,dir,p {
+    font-weight: normal;
+}
+
+ul,dl,ol {
+    list-style: none;
+}
+
+em,i {
+    font-style: normal;
+}
+
+a,button,input,img {
+    outline: none;
+    border: 0;
+}
+
+img {
+    width: 100%;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    /* a标签不显示背景 */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
+html,body {
+
+    /* 抗锯齿 */
+    -webkit-font-smoothing: antialiased;
+
+    /* 关闭字体大小自动调整功能 */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    /* 去掉ios点击阴影 */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+    /* 字体 */
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size:18px;
+    color: #333;
+    overflow-x: hidden;
+}
+
+html {
+  font-size: 13.33333333vw;
+}
+
+body{
+    background: #f7f8fa;
+    max-width: 750px;
+    margin:0 auto;
+}
+
+@media (min-width:750px) { 
+  html{
+    font-size:100px;
+  }
+}
+
+@media (max-width:320px) { 
+  html{
+      font-size:42px;
+  }
+}
+
+[v-cloak] {
+    display: none;
+}

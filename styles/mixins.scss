@@ -1,0 +1,15 @@
+$namespace: 'kkmh';
+
+/* BEM
+ -------------------------- */
+@mixin b($block) {
+  $B: $namespace+'-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@function vws($px) {
+    @return $px / 100px * 1rem;
+}
