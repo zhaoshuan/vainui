@@ -1,55 +1,72 @@
-# hello-world
+# vainui
 
-## Project setup
+> 基于Vue的一款移动端组件库
+
+## 安装
+
+``` bash
+$ npm install vainui
 ```
-npm install
+## 使用
+
+在 `main.js` 文件中引入插件并注册
+
+``` bash
+# 全部引用
+import ui from 'vainui'
+Vue.use(ui)
+
+# 手动按需引入
+import {Button} from 'vainui'
+import 'vainui/dist/lib/button/style.css'
+Vue.use(Button)
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+babel配置自动按需加载
+``` bash
+module.exports = {
+  plugins: [
+        ["import", {
+          libraryName: "vainui",
+          libraryDirectory: "dist/lib",
+          style: (name) => { 
+            return `${name}/style.css` 
+          }
+        },'vainui']
+    ]
+};
 ```
 
-### Compiles and minifies for production
+在项目中使用 vainui
+
+```js
+<template>
+    <kkmh-button :bg-color='color'></kkmh-button>
+</template>
+<script>
+  export default {
+    data () {
+      return {
+        color: '#ff0000'
+      }
+    }
+  }
+</script>
 ```
+
+## 部署
+```
+# 打包组件库
 npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### 首页
-
-这是基于 Vue 技术栈实现的 UI 组件库
-
-### 部署
-
-### 启动
-```
-npm run serve
-```
-
-### 生成组件，可配置按需加载
-```
-npm run build
-```
-
-### 生成示例代码
-```
+# 生成示例代码
 npm run demo
-```
 
-### 生成说明文档
-```
+# 生成说明文档
 npm run docs:build
 ```
 
-### 项目目录
+## 项目目录
 
 ```bash
 dist                       ---- 部署文件
