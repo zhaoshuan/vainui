@@ -17,6 +17,7 @@ module.exports = {
             libraryTarget: 'commonjs2',
         }
     },
+    outputDir: 'dist/lib',
     chainWebpack: config => {
         config.module
             .rule('js')
@@ -44,6 +45,5 @@ module.exports = {
                 return option
             })
     },
-    outputDir: 'lib',
     productionSourceMap: false,
 }

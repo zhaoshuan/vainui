@@ -26,8 +26,8 @@ Vue.use(Button);
 
 #### API
 
-| 参数     | 说明         | 类型    | 默认值  | 版本 |
-| -------- | ------------ | ------- | ------- | ---- |
+| 参数     | 说明         | 类型    | 默认值  |
+| -------- | ------------ | ------- | ------- |
 | bg-color | 按钮背景色 | string | `#1989fa` |
 | text-color | 按钮文字颜色 | string | `#ffffff` |
 | round | 按钮是否圆角 | boolearn | `false` |
@@ -37,3 +37,10 @@ Vue.use(Button);
 | 事件名称 | 说明             | 回调参数        |
 | -------- | ---------------- | --------------- |
 | click    | 点击按钮时的回调 | (event) => void |
+
+
+<template>
+    <div style='position:fixed;right:30px;top:100px;display:hidden'>
+        <iframe style='width:320px;height:768px;' src='http://h5.quickcan.cn/hybrid_test_frame_new.html'></iframe>
+    </div>
+</template>

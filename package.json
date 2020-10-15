@@ -1,18 +1,20 @@
 {
   "name": "vainui",
-  "version": "0.1.6",
-  "description": "基于 Vue 的移动端组件库测试版",
-  "main": "lib/index/index.js",
+  "version": "0.1.7",
+  "description": "基于Vue的移动端组件库测试版",
+  "main": "dist/lib/index/index.js",
   "private": false,
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "demo": "vue-cli-service build --mode demo",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name vaintest --dest lib packages/index.js"
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuepress": "^1.6.0",
@@ -40,6 +42,7 @@
     "prettier": "^1.19.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
