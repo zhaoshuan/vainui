@@ -5,8 +5,8 @@ import './assets/css/base.css';
 
 import ui from './../packages/index'
 // import './../lib/index/style.css'
-
 Vue.use(ui)
+
 
 Vue.config.productionTip = false;
 
