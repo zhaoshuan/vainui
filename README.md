@@ -79,5 +79,7 @@ examples                   ---- 项目demo目录
 babel.config.js            ---- babel配置文件
 package.json               ---- 包管理文件
 README.md                  ---- 项目说明文档
+```
 
-## 更多内容参考说明文档
+## 注意事项
+更多内容可参考说明文档
