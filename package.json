@@ -1,6 +1,6 @@
 {
   "name": "vainui",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "基于Vue的移动端组件库测试版",
   "main": "dist/lib/index/index.js",
   "private": false,

@@ -2,21 +2,16 @@
 
 按钮用于开始一个即时操作。
 
-#### 何时使用
-
-标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
-
 #### 组件注册
 
 ```js
 import { Button } from "vainui";
-import 'vainui/lib/button/style.css'
 Vue.use(Button);
 ```
 
 #### 代码演示
 
-```js
+```html
 <template>
     <div>
         <kkmh-button>测试</kkmh-button>
@@ -30,7 +25,10 @@ Vue.use(Button);
 | -------- | ------------ | ------- | ------- |
 | bg-color | 按钮背景色 | string | `#1989fa` |
 | text-color | 按钮文字颜色 | string | `#ffffff` |
-| round | 按钮是否圆角 | boolearn | `false` |
+| text-size | 文字尺寸，传入转换前的px值 | string | `24` |
+| maxHeight | 按钮高度，传入转换前的px值 | number、string | `60` |
+| block | 是否通栏 | boolearn | `false` |
+| round | 是否圆角 | boolearn | `false` |
 
 #### 事件
 
@@ -40,7 +38,7 @@ Vue.use(Button);
 
 
 <template>
-    <div style='position:fixed;right:30px;top:100px;display:hidden'>
-        <iframe style='width:320px;height:768px;' src='http://h5.quickcan.cn/hybrid_test_frame_new.html'></iframe>
+    <div class='widget'>
+        <iframe src='vainui/dist/demo/index.html#button'></iframe>
     </div>
 </template>

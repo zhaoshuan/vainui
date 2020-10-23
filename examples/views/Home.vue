@@ -24,6 +24,15 @@ export default {
             }, {
                 title: 'Color 测试组件',
                 path: '/color'
+            },{
+                title: 'Dialog 确认弹窗',
+                path: '/dialog'
+            },{
+                title: 'Toast 吐司提示',
+                path: '/toast'
+            },{
+                title: 'Loading 加载',
+                path: 'loading'
             }]
         }
     },

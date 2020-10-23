@@ -2,6 +2,7 @@
 const entry =require('./entry');
 
 module.exports = {
+    lintOnSave: false,
     css: {
         sourceMap: true,
         extract: {

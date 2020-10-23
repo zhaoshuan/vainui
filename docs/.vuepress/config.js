@@ -1,14 +1,13 @@
 module.exports = {
-  title: "test",
+  title: "Vainui",
   dest: './dist/docs',
   description: "组件库文档",
   themeConfig: {
     logo: "/logo.png",
-    sidebar: ["/", "/button/",'/dialog/'],
+    sidebar: ["/", "/button/",'/toast/','/loading/','/dialog/'],
     nav: [
-      { text: "指南", link: "/guide/" },
-      { text: "配置", link: "/config/" },
-      { text: "示例", link: "https://www.baidu.com" },
+      { text: "github", link: "https://github.com/zhaoshuan/vainui.git" },
+      { text: "示例", link: "https://github.com/zhaoshuan/vainui.git" },
     ],
   },
 };

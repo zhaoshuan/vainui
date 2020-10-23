@@ -3,8 +3,8 @@
         <div 
             class="kkmh-toast" 
             :class='`kkmh-toast_${position}`' 
-            v-show='visible'>
-                {{ message }}
+            v-show='visible'
+            v-html='message'>
         </div>
     </transition>
 </template>

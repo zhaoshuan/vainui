@@ -2,7 +2,7 @@ import DialogComponent from './src/dialog.vue'
 
 // 默认参数
 let defaultOptions = {
-    title: '快看漫画',
+    title: '标题',
     message:'',
     overlay: true,
     className: '',

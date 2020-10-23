@@ -1,4 +1,3 @@
-import Color from './color'
 import Button from './button'
 import Loading from './loading'
 import Toast from './toast'
@@ -6,7 +5,6 @@ import Dialog from './dialog'
 
 // 存储组件列表
 const components = [
-    Color,
     Button,
     Loading,
     Toast,
@@ -33,7 +31,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
     install,
-    Color,
     Button,
     Loading,
     Toast,
@@ -44,7 +41,6 @@ export default {
     // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
     install,
     // 以下是具体的组件列表
-    Color,
     Button,
     Loading,
     Toast,
